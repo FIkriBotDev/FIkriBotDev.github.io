@@ -1,118 +1,426 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExodusCloud</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-            margin: 0;
-        }
-        .hero {
-            background-color: #5cb85c;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-            width: 100%;
-            margin: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .vps-specs {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        .vps-spec {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            flex: 1 1 30%;
-            margin: 10px;
-            text-align: center;
-        }
-        .vps-spec h3 {
-            margin-top: 0;
-        }
-        .buy-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            background: #5cb85c;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .buy-button:hover {
-            background: #4cae4c;
-        }
-        .buy-button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            position: relative;
-            width: 100%;
-        }
-        @media (max-width: 768px) {
-            .vps-spec {
-                flex-direction: column;
-            }
-            .vps-spec {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="exoduscloud, nat vps, vps nat, exoduscloud.my.id, muhammad fikri fahrezi, hosting, web hosting, nat rdp, nat cloud rdp, cloud vps" />
+<meta property="og:image" content="images/server-img.jpg">
+  <meta name="description" content="VPS Hosting Murah" />
+  <meta name="author" content="Muhammad Fikri Fahrezi" />
+
+  <title>ExodusCloud</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
+
 <body>
 
-<header>
-    <h1>ExodusCloud</h1>
-</header>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>ExodusCloud</span>
+          </a>
 
-<div class="hero">
-    <h2>Free VPS Proxmox</h2>
-</div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
 
-<div class="container">
-    <h2>Daftar Node</h2>
-    <div class="vps-specs">
-        <div class="vps-spec">
-            <h3>Node1</h3>
-            <p>1 CPU, 1 GB RAM, 4 GB SSD</p>
-            <button class="buy-button" onclick="window.location.href='http://daftar.exoduscloud.my.id:43212/'">Access Node1</button>
-        </div>
-        <div class="vps-spec">
-            <h3>Node2 (Offline)</h3>
-            <p>1 CPU, 1 GB RAM, 4 GB SSD</p>
-            <button class="buy-button" disabled>Access Node2</button>
-        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#price">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://proxmox.exoduscloud.my.id:44016">Login</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <form class="form-inline">
+              </form>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Managed <br>
+                      NAT VPS Platform
+                    </h1>
+                    <p>
+			Jika Anda butuh VPS dengan harga yang murah, maka NAT VPS solusi untuk Anda.
+                    <div class="btn-box">
+                      <a href="http://daftar.exoduscloud.my.id:43212" class="btn-1">
+                        <b>Trial Node</b> - Gratis masa trial 2 hari
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="images/slider-img.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container" id="service">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Services
+        </h2>
+      </div>
     </div>
-</div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                NAT VPS
+              </h4>
+              <p>
+                Layanan VPS yang menggunakan teknik NAT untuk mengelola alamat IP, satu alamat IP publik dapat digunakan untuk mengakses beberapa VPS dengan alamat IP privat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                NAT Cloud RDP
+              </h4>
+              <p>
+                Remote Desktop Protocol yang berjalan di cloud dengan sistem operasi Windows Server yang menggunakan teknik NAT.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s5.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Web Hosting
+              </h4>
+              <p>
+                Hosting web yang aman dengan harga murah.
+              </p>
+            </div>
+          </div>
+        </div>
+  </section>
 
-<footer>
-    <p>&copy; 2024 ExodusCloud. All Rights Reserved.</p>
-</footer>
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  " id="about">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+		ExodusCloud menyediakan paket NAT VPS/RDP dengan harga terjangkau.
+         </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- server section -->
+
+  <section class="server_section">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/server-img.jpg" alt="">
+            <div class="play_btn">
+              <button>
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Apa itu VPS NAT?
+              </h2>
+              <p>
+NAT VPS (Network Address Translation Virtual Private Server) adalah sebuah layanan VPS yang menggunakan teknik NAT untuk mengelola alamat IP. Dalam konfigurasi ini, satu alamat IP publik dapat digunakan untuk mengakses beberapa VPS dengan alamat IP privat. NAT memungkinkan beberapa server virtual untuk berbagi koneksi internet yang sama, meningkatkan efisiensi penggunaan alamat IP dan memberikan lapisan keamanan tambahan. Dengan NAT, lalu lintas internet dapat diarahkan dengan aman ke server yang tepat tanpa mengekspos alamat IP privatnya secara langsung.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end server section -->
+
+  <!-- price section -->
+
+  <section class="price_section layout_padding">
+    <div class="container" id="price">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Pricing
+        </h2>
+      </div>
+      <div class="price_container ">
+        <div class="box">
+          <div class="detail-box">
+            <h2>40.000.00/bln <span></span></h2>
+            <h6>
+              1G1C
+            </h6>
+            <ul class="price_features">
+              <li>
+                1GB RAM
+              </li>
+              <li>
+                64GB SSD Cloud Storage
+              </li>
+              <li>
+                Shared IPv4
+              </li>
+              <li>
+                10 Port
+              </li>
+              <li>
+                Full Root Access
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="https://wa.me/6285150984232?text=1g1c">
+              Pesan
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h2>50.000.00/bln <span></span></h2>
+            <h6>
+              2G1C
+            </h6>
+            <ul class="price_features">
+              <li>
+                2GB RAM
+              </li>
+              <li>
+                100GB SSD Cloud Storage
+              </li>
+              <li>
+                Shared IPv4
+              </li>
+              <li>
+                10 Port
+              </li>
+              <li>
+                Full Root Access
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+    
+            <a href="https://wa.me/6285150984232?text=2g1c">
+            
+  Pesan
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h2>80.000.00/bln <span></span></h2>
+            <h6>
+              4G2C
+            </h6>
+            <ul class="price_features">
+              <li>
+                4GB RAM
+              </li>
+              <li>
+                200GB SSD Cloud Storage
+              </li>
+              <li>
+                Shared IPv4
+              </li>
+              <li>
+                10 Port
+              </li>
+              <li>
+                Full Root Access
+              </li>
+            </ul>
+          </div>
+          <div class="btn-box">
+            <a href="https://wa.me/6285150984232?text=4g2c">
+            
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- price section -->
+
+  <!-- client section -->
+  <!-- end client section -->
+
+  <!-- contact section -->
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_social">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              saat ini kami menyediakan masa trial selama 2 hari
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-0">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://community.exoduscloud.my.id/">ExodusNetwork</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
 </body>
+
 </html>

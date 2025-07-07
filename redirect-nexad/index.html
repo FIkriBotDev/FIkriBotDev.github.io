@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function () {
+      // Ambil path setelah /redirect-nexad/
+      const path = window.location.pathname;
+      const match = path.match(/^\/redirect-nexad\/(.+)$/);
+
+      if (match) {
+        const identifier = match[1]; // Dapatkan bagian setelah /redirect-nexad/
+        const targetUrl = `https://pollinations.ai/redirect-nexad/${identifier}`;
+        window.location.href = targetUrl;
+      } else {
+        // Jika URL tidak sesuai, tampilkan pesan
+        document.body.innerHTML = "<h1>Format URL tidak valid</h1>";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
